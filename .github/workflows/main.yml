@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v2
+      - uses: PragSNIPER/checkout@v2
       - id: foo
-        uses: actions/Sample-repo-composite@v1
+        uses: PragSNIPER/Sample-repo-composite@v1
         with:
           who-to-greet: 'Praga the Auto enthusiast'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
