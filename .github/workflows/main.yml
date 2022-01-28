@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: Sample-repo-composite/checkout@v2
+      - uses: actions/checkout@v2
       - id: foo
         uses: PragSNIPER/Sample-repo-composite@v1
         with:
